@@ -3,6 +3,7 @@ import Peoples from '../../components/Dashboard/Peoples'
 import Quote from '../../components/Dashboard/Quote'
 import { Scores } from '../../components/Dashboard/Scores'
 import { TabBoxes } from '../../components/Dashboard/TabBoxes'
+import { Table } from '../../components/Dashboard/Table'
 import Tips from '../../components/Dashboard/Tips'
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       </div>
       <div className='flex-col lg:flex-row mt-2'>
           <TabBoxes />
+          <Table />
       </div>
     </div>
   )
