@@ -38,8 +38,8 @@ const Peoples = () => {
             <div className='bg-white p-4 flex flex-col lg:flex-col relatve h-full basis-1/3'>
                 <div className='flex justify-between'>
                     <div>
-                        <p className='text-sm text-gray mt-3'>Distributer</p>
-                        <p className='text-lg font-bold mt-1'>Avnet</p>
+                        <p className='text-sm text-gray mt-3'>Purchase Customer</p>
+                        <p className='text-lg font-bold mt-1'>Foxconn</p>
                     </div>
                     <div className='w-11 h-9 rounded bg-[#FFF3CD] text-[#FFC700] font-lg font-bold flex justify-center items-center lg:relative top-0 right-0'>
                         62
