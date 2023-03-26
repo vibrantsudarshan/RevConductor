@@ -21,10 +21,9 @@ module.exports = {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
     },
     fontWeight: {
-      normal: '400',
+      normal: '500',
       bold: '700',
     },
-    
     colors: {
       inherit: colors.inherit,
       current: '#5c6c78',

@@ -14,7 +14,7 @@ type DetailProps = {
 const Detail = ({ data }: DetailProps) => {
   return (
     <div className='m-3 flex flex-col  gap-5 lg:flex-row '>
-        <div className='flex flex-col gap-5 basis-1/2'>
+        <div className='flex flex-col gap-5 basis-7/12'>
             <div className=' flex flex-col lg:flex-row bg-white h-full w-full p-4 basis-1/2'>
                 <ScatterPlot />
                 <PriceTrendChart />
@@ -23,7 +23,7 @@ const Detail = ({ data }: DetailProps) => {
                 <StatisticBox />
             </div>
         </div>
-        <div className='flex flex-col gap-5 basis-1/2'>
+        <div className='flex flex-col gap-5 basis-5/12'>
             <div className='flex flex-grow bg-white h-full w-full p-4 basis-1/5'>
                 <DoubleLineChart />
             </div>

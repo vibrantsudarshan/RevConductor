@@ -2,7 +2,6 @@ import Button from '@material-tailwind/react/components/Button';
 import Input from '@material-tailwind/react/components/Input';
 import React from 'react'
 import { useState } from 'react'
-
 export const ChatBox = () => {
 
     const [activeTabIndex, setactiveTabIndex] = useState(1);
@@ -13,11 +12,11 @@ export const ChatBox = () => {
     return (
         <div className='bg-white shadow-sm roudned h-full p-4'>
             <div className='flex flex-col md:flex-col lg:flex-row  justify-between items-center'>
-                <div className='flex justify-start h-10 divide-x-2 border-2 rounded-md divide-color-grey bg-white  ml-4'>
-                    <div className='flex items-center pl-4 pr-4 pt-3 pb-3 hover:bg-[#D0D5DD]'>
+                <div className='flex justify-start h-10 divide-x-2 border-2 rounded-md divide-color-grey bg-white'>
+                    <div className='flex items-center pl-4 pr-4 pt-3 pb-3 whitespace-nowrap hover:bg-[#D0D5DD]'>
                         <p className='text-base'>Comments</p>
                     </div>
-                    <div className='flex items-center pl-4 pr-4 pt-3 pb-3 hover:bg-[#D0D5DD]'>
+                    <div className='flex items-center pl-4 pr-4 pt-3 pb-3 whitespace-nowrap hover:bg-[#D0D5DD]'>
                         <p className='text-base'>Activity Log</p>
                     </div>
                 </div>
@@ -25,7 +24,7 @@ export const ChatBox = () => {
                     <div className="flex space-x-5 border-b">
                         <button
                             key='1'
-                            className={`py-2 border-b-4 transition-colors duration-300 ${1 === activeTabIndex
+                            className={`px-4 py-2 whitespace-nowrap border-b-4 transition-colors duration-300 ${1 === activeTabIndex
                                 ? "border-[#4094F7]"
                                 : "border-transparent hover:border-[#4094F7]"
                                 }`}
@@ -37,7 +36,7 @@ export const ChatBox = () => {
                     <div className="flex space-x-3 border-b">
                         <button
                             key='1'
-                            className={`py-2 border-b-4 transition-colors duration-300 ${2 === activeTabIndex
+                            className={`px-4 py-2 whitespace-nowrap border-b-4 transition-colors duration-300 ${2 === activeTabIndex
                                 ? "border-[#4094F7]"
                                 : "border-transparent hover:border-[#4094F7]"
                                 }`}
@@ -48,7 +47,7 @@ export const ChatBox = () => {
                     <div className="flex space-x-3 border-b border-b-">
                         <button
                             key='1'
-                            className={`py-2 border-b-4 transition-colors duration-300 ${3 === activeTabIndex
+                            className={`px-4 py-2 whitespace-nowrap border-b-4 transition-colors duration-300 ${3 === activeTabIndex
                                 ? "border-[#4094F7]"
                                 : "border-transparent hover:border-[#4094F7]"
                                 }`}
@@ -58,8 +57,9 @@ export const ChatBox = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <div className='flex flex-row pt-3 pl-3 mt-3'>
+
+            <div className='overflow-y-auto h-[448px] scrollbar scrollbar-thumb-gray-900 scroll-mr-1 scrollbar-track-gray-100'>
+                <div className='flex flex-row pt-3 mt-3'>
                     <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
                         1
                     </div>
@@ -80,7 +80,7 @@ export const ChatBox = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-row pt-3 pl-3 mt-3'>
+                <div className='flex flex-row pt-3 mt-3'>
                     <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
                         1
                     </div>
@@ -100,7 +100,87 @@ export const ChatBox = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-row pt-3 pl-3 mt-3'>
+                <div className='flex flex-row pt-3 mt-3'>
+                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
+                        1
+                    </div>
+                    <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
+                        <div className='flex flex-row justify-between'>
+                            <div className='flex flex-row items-center'>
+                                <p className='text-sm font-bold'>June Marry</p>
+                                <p className='text-ms text-[#4094F7] ml-2'>Sales OP</p>
+                            </div>
+                            <p className='text-sm text-gray'>2 hours</p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
+                        <div className='flex flex-row pt-2'>
+                            <p className='text-xs'> 6 Replies</p>
+                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-row pt-3 mt-3 '>
+                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
+                        1
+                    </div>
+                    <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
+                        <div className='flex flex-row justify-between'>
+                            <div className='flex flex-row items-center'>
+                                <p className='text-sm font-bold'>June Marry</p>
+                                <p className='text-ms text-[#4094F7] ml-2'>Sales OP</p>
+                            </div>
+                            <p className='text-sm text-gray'>2 hours</p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
+                        <div className='flex flex-row pt-2'>
+                            <p className='text-xs'> 6 Replies</p>
+                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-row pt-3 mt-3'>
+                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
+                        1
+                    </div>
+                    <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
+                        <div className='flex flex-row justify-between'>
+                            <div className='flex flex-row items-center'>
+                                <p className='text-sm font-bold'>June Marry</p>
+                                <p className='text-ms text-[#4094F7] ml-2'>Sales OP</p>
+                            </div>
+                            <p className='text-sm text-gray'>2 hours</p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
+                        <div className='flex flex-row pt-2'>
+                            <p className='text-xs'> 6 Replies</p>
+                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-row pt-3 mt-3'>
+                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
+                        1
+                    </div>
+                    <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
+                        <div className='flex flex-row justify-between'>
+                            <div className='flex flex-row items-center'>
+                                <p className='text-sm font-bold'>June Marry</p>
+                                <p className='text-ms text-[#4094F7] ml-2'>Sales OP</p>
+                            </div>
+                            <p className='text-sm text-gray'>2 hours</p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
+                        <div className='flex flex-row pt-2'>
+                            <p className='text-xs'> 6 Replies</p>
+                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-row pt-3 mt-3'>
                     <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
                         1
                     </div>
@@ -123,15 +203,10 @@ export const ChatBox = () => {
                 {/* 3 chats */}
             </div>
             <div className='flex flex-row mt-6'>
-                <Input
+                <input
+                    type="text"
                     placeholder="Start typing..."
-                    className="rounded  focus:border-t-gray-400 pr-5 text-sm pl-2"
-                    labelProps={{
-                        className: "before:content-none after:content-none",
-                    }}
-                    containerProps={{
-                        className: "min-w-0",
-                    }}
+                    className="w-full h-10 py-3 pl-3 pr-4 text-gray-500 border rounded-md outline-none  focus:bg-white focus:border-indigo-600"
                 />
                 <Button
                     ripple={true}

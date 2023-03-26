@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 const Quote = () => {
   return (
     <div className='bg-white p-4 flex gap-2 lg:gap-14 flex-col lg:flex-row relative h-full rounded shadow-sm'>

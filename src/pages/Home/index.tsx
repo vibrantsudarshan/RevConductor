@@ -33,6 +33,7 @@ const Home = () => {
           <Table />
           {/* <ScatterPlot/> */}
       </div>
+
     </div>
   )
 }
