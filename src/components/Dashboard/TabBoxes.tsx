@@ -1,9 +1,11 @@
 import React from 'react'
+import { Input } from '@material-tailwind/react'
+import Button from '@material-tailwind/react/components/Button'
 
 export const TabBoxes = () => {
     return (
-        <div className='flex items-center justify-between large-col large:flex-col'>
-            <div className='flex justify-start h-10 divide-x-2 border-2 rounded-md divide-color-grey bg-white  ml-4'>
+        <div className='flex flex-col items-center justify-between lg:flex-row'>
+            <div className='flex h-10 divide-x-2 border-2 rounded-md divide-color-grey bg-white '>
                 <div className='flex items-center pl-4 pr-4 pt-3 pb-3 hover:bg-[#D0D5DD]'>
                     <p className='text-base'>View All</p>
                     <p className='text-sm text-gray'>(6)</p>
@@ -29,18 +31,29 @@ export const TabBoxes = () => {
                     <p className='text-sm text-gray'>(3)</p>
                 </div>
             </div>
-            <div className='flex flex-row mr-2 w-auto'>
-                <div className='w-10 h-10 ml-87 rounded bg-white border-2 text-[#4094F7] font-lg font-bold flex justify-center items-center p-4 hover:bg-[#D0D5DD]'>
+            <div className='flex flex-row mt-3 lg:mt-0'>
+                <div className='w-10 h-10 rounded bg-white border-2 text-[#4094F7] font-lg font-bold flex items-center p-4 hover:bg-[#D0D5DD] mr-3'>
                     4
                 </div>
-                <div className='w-80 h-10  ml-3 bg-white border-2 gap-5 rounded-lg text-gray font-lg font-bold flex justify-start items-center p-4'>
-                    <div className='text-gray'>
-                        5
-                    </div>
-                    <div className='text-gray text-base'>
-                    <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 sm:text-sm" placeholder="Search" type="text" name="search"/>
-                    </div>
-                </div>
+                <Button
+                    ripple={true}
+                    variant="text"
+                    color="blue-gray"
+                    className="flex h-10 items-center gap-2 rounded-r-none border border-r-0 border-blue-gray-200 bg-blue-gray-500/10 pl-3" >
+                    <img
+                        className="h-4 w-4 rounded-full object-cover"
+                    />
+                </Button>
+                <Input
+                    placeholder="Search"
+                    className="rounded  focus:border-t-gray-400"
+                    labelProps={{
+                        className: "before:content-none after:content-none",
+                    }}
+                    containerProps={{
+                        className: "min-w-0",
+                    }}
+                />
             </div>
         </div>
     )

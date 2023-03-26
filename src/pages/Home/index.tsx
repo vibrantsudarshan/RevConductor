@@ -1,4 +1,5 @@
 import React from 'react'
+import Detail from '../../components/Dashboard/Detail'
 import Peoples from '../../components/Dashboard/Peoples'
 import Quote from '../../components/Dashboard/Quote'
 import { Scores } from '../../components/Dashboard/Scores'
@@ -9,25 +10,28 @@ import Tips from '../../components/Dashboard/Tips'
 const Home = () => {
   return (
     <div>
-      <div className='flex gap-3 flex-col lg:flex-row'>
-        <div className='basis-3/4'>
-          <Quote />
+      <div className='flex gap-3 flex-col xl:flex-row'>
+        <div className='basis-3/4 flex flex-col gap-3'>
+          <div className='min-h-[180px]'>
+            <Quote />
+          </div>
+          <div className='min-h-[180px]'>
+            <Peoples />
+          </div>
         </div>
-        <div className='basis-1/4'>
-          <Tips />
+        <div className='basis-1/4 flex flex-row xl:flex-col gap-3'>
+          <div className='flex-grow min-h-[180px]'>
+            <Tips />
+          </div>
+          <div className='flex-grow min-h-[180px]'>
+            <Scores />
+          </div>
         </div>
       </div>
-      <div className='flex gap-3 flex-col lg:flex-row mt-2'>
-        <div className='flex flex-col lg:flex-row rounded shadow basis-3/4'>
-          <Peoples />
-        </div>
-        <div className='basis-1/4'>
-          <Scores />
-        </div>
-      </div>
-      <div className='flex-col lg:flex-row mt-2'>
+      <div className='bg-white p-5 h-full rounded shadow-sm mt-2'>
           <TabBoxes />
           <Table />
+          {/* <ScatterPlot/> */}
       </div>
     </div>
   )

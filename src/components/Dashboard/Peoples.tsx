@@ -2,14 +2,14 @@ import React from 'react'
 
 const Peoples = () => {
     return (
-        <div className='flex justify-between relative w-full h-full divide-x-2 divide-lightgray'>
-            <div className='bg-white p-4 flex flex-col lg:flex-col relatve h-full basis-1/3'>
+        <div className='flex flex-col lg:flex-row divide-y-2 lg:divide-x-2 divide-lightgray h-full'>
+            <div className='bg-white p-4 flex flex-col flex-grow'>
                 <div className='flex justify-between'>
                     <div>
                         <p className='text-sm text-gray mt-3'>Distributer</p>
                         <p className='text-lg font-bold mt-1'>Avnet</p>
                     </div>
-                    <div className='w-11 h-9 rounded bg-[#BFF9DB] text-[#0EBA61] font-lg font-bold flex justify-center items-center lg:relative top-0 right-0'>
+                    <div className='w-11 h-9 rounded bg-[#BFF9DB] text-[#0EBA61] font-lg font-bold flex justify-center items-center'>
                         85
                     </div>
 
@@ -34,14 +34,14 @@ const Peoples = () => {
                         <p className='text-[#0EBA61] text-ms'>↑ 76.01%</p>
                     </div>
                 </div>
-            </div>
-            <div className='bg-white p-4 flex flex-col lg:flex-col relatve h-full basis-1/3'>
+            </div> 
+            <div className='bg-white p-4 flex flex-col flex-grow'>
                 <div className='flex justify-between'>
                     <div>
                         <p className='text-sm text-gray mt-3'>Purchase Customer</p>
                         <p className='text-lg font-bold mt-1'>Foxconn</p>
                     </div>
-                    <div className='w-11 h-9 rounded bg-[#FFF3CD] text-[#FFC700] font-lg font-bold flex justify-center items-center lg:relative top-0 right-0'>
+                    <div className='w-11 h-9 rounded bg-[#FFF3CD] text-[#FFC700] font-lg font-bold flex justify-center items-center'>
                         62
                     </div>
 
@@ -68,13 +68,13 @@ const Peoples = () => {
                 </div>
 
             </div>
-            <div className='bg-white p-4 flex gap-2 lg:gap-2 flex-col lg:flex-col relatve h-full basis-1/3'>
+            <div className='bg-white p-4 flex gap-2 lg:gap-2 flex-col flex-grow'>
                 <div className='flex justify-between'>
                     <div>
                         <p className='text-sm text-gray mt-3'>Purchase Customer</p>
                         <p className='text-lg font-bold mt-1'>Foxconn</p>
                     </div>
-                    <div className='w-11 h-9 rounded bg-[#FFECE8] text-[#FF0000] font-lg font-bold flex justify-center items-center lg:relative top-0 right-0'>
+                    <div className='w-11 h-9 rounded bg-[#FFECE8] text-[#FF0000] font-lg font-bold flex justify-center items-center'>
                         47
                     </div>
 

@@ -12,6 +12,11 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    extend: {
+      width: {
+        'ruler':'0.063rem'//1px
+      }
+    },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
     },
@@ -19,6 +24,7 @@ module.exports = {
       normal: '400',
       bold: '700',
     },
+    
     colors: {
       inherit: colors.inherit,
       current: '#5c6c78',

@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Quote = () => {
   return (
     <div className='bg-white p-4 flex gap-2 lg:gap-14 flex-col lg:flex-row relative h-full rounded shadow-sm'>
@@ -22,7 +21,7 @@ const Quote = () => {
         </div>
         <div className='lg:basis-1/2'>
             <div className='flex justify-end gap-2 mb-2 absolute top-4 right-4 lg:relative lg:top-0 lg:right-0'>
-                <button className='border text-gray border-gray hover:bg-gray hover:text-white transition-all w-6 h-6 rounded'>1</button>
+                <button className='border bg-[MessageBox] text-gray border-gray hover:bg-gray hover:text-white transition-all w-6 h-6 rounded'>1</button>
                 <button className='border text-gray border-gray hover:bg-gray hover:text-white transition-all w-6 h-6 rounded'>2</button>
             </div>
             <div className='flex divide-x-2 divide-lightgray gap-8 lg:gap-12'>
