@@ -1,5 +1,6 @@
 import Checkbox from '@material-tailwind/react/components/Checkbox'
 import React from 'react'
+import DownArrow from '../../assets/icons/downArrow.svg';
 
 export const StatisticBox = () => {
     return (
@@ -7,7 +8,9 @@ export const StatisticBox = () => {
             <div className='gap-5 flex flex-col grow px-4 divide-y-2'>
                 <div className='flex flex-row items-center justify-between gap-10 h-6'>
                     <p className='text-sm'>Debid Duration</p>
-                    <div className='text-gray bg-white rounded border-2'>90days</div>
+                    <div className='text-gray bg-white rounded border-2 flex flex-row px-1 hover:bg-gray-300'>90days
+                        <img src={DownArrow}/>
+                    </div>
                 </div>
                 <div className='flex flex-row items-center justify-between gap-10 h-6'>
                     <p className='text-sm'>Justfication</p>

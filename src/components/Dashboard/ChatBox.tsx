@@ -2,6 +2,9 @@ import Button from '@material-tailwind/react/components/Button';
 import Input from '@material-tailwind/react/components/Input';
 import React from 'react'
 import { useState } from 'react'
+import AvatarBoy from '../../assets/icons/Avatar1.png'
+import AvatarGirl from '../../assets/icons/Avatar2.png'
+import MsgReply from '../../assets/icons/chat.svg';
 export const ChatBox = () => {
 
     const [activeTabIndex, setactiveTabIndex] = useState(1);
@@ -57,12 +60,10 @@ export const ChatBox = () => {
                     </div>
                 </div>
             </div>
-
             <div className='overflow-y-auto h-[448px] scrollbar scrollbar-thumb-gray-900 scroll-mr-1 scrollbar-track-gray-100'>
                 <div className='flex flex-row pt-3 mt-3'>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarGirl}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -76,14 +77,13 @@ export const ChatBox = () => {
                         </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-row pt-3 mt-3'>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarBoy}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -96,14 +96,13 @@ export const ChatBox = () => {
                             Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-row pt-3 mt-3'>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarBoy}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -116,14 +115,13 @@ export const ChatBox = () => {
                             Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-row pt-3 mt-3 '>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarBoy}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -136,14 +134,13 @@ export const ChatBox = () => {
                             Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-row pt-3 mt-3'>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarBoy}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -156,14 +153,13 @@ export const ChatBox = () => {
                             Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-row pt-3 mt-3'>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarBoy}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -176,14 +172,13 @@ export const ChatBox = () => {
                             Lorem ipsum dolor sit amet, coetur adipiscing elit ut.                        </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-row pt-3 mt-3'>
-                    <div className='h-8 w-8 bg-info rounded-full items-center p-2'>
-                        1
-                    </div>
+                    <img className='h-8 w-8 rounded-full items-center ' src={AvatarBoy}>
+                    </img>
                     <div className='bg-[#F7F8F9] rounded-lg p-2 ml-1'>
                         <div className='flex flex-row justify-between'>
                             <div className='flex flex-row items-center'>
@@ -196,11 +191,11 @@ export const ChatBox = () => {
                             Lorem ipsum dolor sit amet,  dearo ewci tapD dsafiwt coetur adipiscing elit ut.                        </p>
                         <div className='flex flex-row pt-2'>
                             <p className='text-xs'> 6 Replies</p>
-                            <div className='h-4 w-4 bg-white border ml-2'></div>
+                            <img className='h-3 w-3 ml-2' src={MsgReply}></img>
+
                         </div>
                     </div>
                 </div>
-                {/* 3 chats */}
             </div>
             <div className='flex flex-row mt-6'>
                 <input

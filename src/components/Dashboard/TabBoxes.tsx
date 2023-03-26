@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input } from '@material-tailwind/react'
 import Button from '@material-tailwind/react/components/Button'
+import BackImg from '../../assets/icons/back.svg'
 
 export const TabBoxes = () => {
     return (
@@ -32,9 +33,8 @@ export const TabBoxes = () => {
                 </div>
             </div>
             <div className='flex flex-row mt-3 lg:mt-0'>
-                <div className='w-10 h-10 rounded bg-white border-2 text-[#4094F7] font-lg font-bold flex items-center p-4 hover:bg-[#D0D5DD] mr-3'>
-                    4
-                </div>
+                <img className='w-10 h-10 rounded bg-white border-2 text-[#4094F7] font-lg font-bold flex items-center p-1.5 hover:bg-[#D0D5DD] mr-3' src={BackImg}>
+                </img>
                 <div className="relative">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
